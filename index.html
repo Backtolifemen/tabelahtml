@@ -1,65 +1,66 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Frutas</title>
+    <title>Formulário com Imagem</title>
     <style>
-        table {
-            width: 50%;
-            border-collapse: collapse;
-            margin: 20px auto;
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://via.placeholder.com/800'); /* Substitua pelo URL da sua imagem */
+            background-size: cover;
+            padding: 20px;
+            color: white;
         }
-        th, td {
-            border: 1px solid #e2980f;
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
             padding: 10px;
-            text-align: center;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
         }
-        th {
-            background-color: #60e613;
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
         }
     </style>
 </head>
 <body>
 
-<h2 style="text-align: center;">Tabela de Frutas</h2>
+    <div class="form-container">
+        <h2>Formulário de Registro</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
-<table>
-    <thead>
-        <tr>
-            <th>Fruta</th>
-            <th>Cor</th>
-            <th>Preço (R$)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Maçã</td>
-            <td>Vermelha</td>
-            <td>3.00</td>
-        </tr>
-        <tr>
-            <td>Banana</td>
-            <td>Amarela</td>
-            <td>2.50</td>
-        </tr>
-        <tr>
-            <td>Laranja</td>
-            <td>Laranja</td>
-            <td>2.80</td>
-        </tr>
-        <tr>
-            <td>Uva</td>
-            <td>Púrpura</td>
-            <td>4.50</td>
-        </tr>
-        <tr>
-            <td>Abacaxi</td>
-            <td>Amarelo</td>
-            <td>5.00</td>
-        </tr>
-    </tbody>
-</table>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
 
 </body>
 </html>
